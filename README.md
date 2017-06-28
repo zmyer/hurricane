@@ -1,13 +1,15 @@
-#Hurricane Real-time Processing
+# Hurricane Real-time Processing
 
-##0.6.1 Branch
+You may refer to [Book Case](https://github.com/samblg/hurricane/tree/book_case) for the code of book and the first workable source code.
+
+##0.6.1 (master branch)
 This branch includes the following major updates:
 
 - New order preserving mechanism. (Message distribution in managers is in parallel way.)
 - New features in kake build system. (Isolation of project and platform configurations, completed log mechanism and support of build/install/clean commands.)
 - kqueue enhancment in meshy network library.
 
-###0.6.2 TODO-list
+##0.6.2
 - New APIs in meshy network library.
 - OpenSSL support in meshy network library.
 - Windows server platform support. (Providing Microsoft Visual Studio projects.)
@@ -59,7 +61,7 @@ It's very simple to build with Makefile, simply type the following command:
 
 make
 
-### Build Hurricane usin gmake
+### Build Hurricane using gmake
 First the jvm lib which is needed when linking objects and the include path for jni.h should be specified in corresponding Makefile.deps. For now modify target/Makefile.deps
 
 ```
@@ -74,4 +76,4 @@ Enter target/build/linux/x64/Release/build and type:
 The nimbus and supervisor will be built into target/bin/linux/x64/Release. The demo project will submit a sample word count topololgy.
 
 ## Get Started
-After the installation, you can write a simple topology described in ![docs/introduction.md](docs/introduction.md). Then submit the output shared library to Hurricane.
+After the installation, you can write a simple topology described in [docs/introduction.md](https://github.com/samblg/hurricane/blob/master/docs/introduction.md). Then submit the output shared library to Hurricane.
